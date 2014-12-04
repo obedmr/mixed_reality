@@ -3,13 +3,14 @@ Travelex: Augmented Reality using Google Geofences
 
 - Abstract
 - Introduction
-  - Justification
-  - Hardware Requirements
-  - Programming Techniques
-- Development
+  - AR trends 
+  - Related projects / research
+  - Hardware Requirements / Justification
+  - Programming Techniques / Justification / Comparison
+- Our work
   - Identifying places of interest
-  - Google Geofences Implementation	
-  - Project Schedule
+  - Google Geofences Implementation
+  - Project Schedule / personnel needs 
   - Impact of the project
 - Conclusion
 - Future Work
