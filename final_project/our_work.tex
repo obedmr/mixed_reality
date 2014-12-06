@@ -1,5 +1,14 @@
 \section{Our Work}
+The Travelex project approach at this moment was just a Proof of Concept (POC) with a 
+few of testing locations where we are getting automatic notifications when an user 
+is walking near there. The experiments were done in the TEC Campus Guadalajara area. \\
 
+\begin{figure}[ht]
+  \centering
+  \includegraphics[scale=0.08]{travelex_menu}
+  \caption{Travelex Main Menu View}
+  \label{fig_menu}
+\end{figure}
 
 \subsection{Identifying places of Interest}
 Based on the top 10 touristic places in Mexico shown in the TripAdvisor website[3]: \\
@@ -17,10 +26,22 @@ Based on the top 10 touristic places in Mexico shown in the TripAdvisor website[
   \item Acapulco
 \end{itemize}
 
+In order to provide the first proof of concept (POC), we started in our city; 
+Guadalajara, which is also a  touristic city.
 
-In order to provide the first proof of concept (POC), we started in our city; Guadalajara, which is also a 
-touristic city.
+\begin{figure}[ht]
+  \centering
+  \includegraphics[scale=0.08]{travelex_places}
+  \caption{Recent Places View}
+  \label{fig_places}
+\end{figure}
 
+\begin{figure}[ht]
+  \centering
+  \includegraphics[scale=0.08]{travelex_notification}
+  \caption{Recent Places View}
+  \label{fig_notification}
+\end{figure}
 
 \subsection{Google Geofences Implementation}
 A geofence defines a region of interest. For example, this may be a polygon outside of which a particular set of entities is not expected to stray. Geofences apply to particular collections.\\
@@ -48,26 +69,61 @@ For the  Travelex first approach the work-flow consists in the following 4 steps
         current location
 \end{itemize}
 
-IMAGE Flow Chart\\
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=2.5in]{travelex_flow}
+  \caption{Travelex Data-Flow Diagram}
+  \label{fig_sim}
+\end{figure} 
 
 NOTE: In our first testing approach, geofences were predefined and loaded at installation time in the SQLite 
 database file.
 
 \subsection{Project Schedule}
-Gant Diagram
 
 \subsubsection{Personnel Needs}
-How many developers, testers (internals and externals)
-(national/internationals)
+At the beginning of this project it can be started with a 10 people team, because it 
+would start as a proof of concept for an specific city. Once the project get the 
+accentance from the users, it will be escalated to more than 20 people where we will
+have teams of developers, testers, designers, infrastructure operators and support.\\
+
+Below are the number of human resources for the first release of the project:
+
+\begin{itemize}
+  \item 1 Software Architect
+  \item 3 Android Developers
+  \item 3 User Interface Designers
+  \item 3 Testers 
+\end{itemize}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=2.5in]{schedule_table}
+  \caption{Table of Project Schedule (on weeks)}
+  \label{fig2}
+\end{figure}
+
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=2.5in]{schedule_gantt}
+  \caption{Gantt Diagram of Project Schedule}
+  \label{fig3}
+\end{figure}
 
 \subsection{Impact of the project}
-- Helping the tourists
-* Economy perspective
-- Improving local business 
-* Goverment perspective
-- Generating more jobs
+The impact of this project can be separated in 2 principal beneficiary sectors:\\
 
-FODA diagram
+1. Economic
+  \begin{itemize}
+    \item Local businesses get more tourists on their destinations
+    \item More job opportunites due the demand of more services for tourists that are coming every vacation season
+  \end{itemize}
 
-
-
+2. Social 
+\begin{itemize}
+    \item Local culture is difunded around the world 
+    \item Being role model in technology that is applied to improve the tourism
+    \item Tourists will feel comfortable because there's a virtual assistent that will be there for directions to 
+          amazing places to visit
+\end{itemize}

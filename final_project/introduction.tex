@@ -6,27 +6,78 @@ in the world. This combination of virtual and physical world information has not
 utilized at all in the Tourism field. \\
 
 Augmented Reality (AR) is providing an extension of key visual and non-visual elements
-that are improving user experience in her/his interaction with the technology. 
+that are improving user experience in her/his interaction with the technology. \\
 
-This paper explains how Google Geofences Java Framework can improve the user experience
-on touristic places. Google provides an innovative API that can provide 
+Geo-fencing is a technique for defining a virtual perimeter or real-world geographical 
+area. A geo-fence could be dynamically generated—as in a radius around a store or point location. Or a geo-fence can be a predefined set of boundaries, like school attendance zones or neighborhood boundaries. \\
+
+Custom-digitized geofences have been in use since 2004 for multiple online mapping applications since their development by Dr. Vinay Rawlani at the University of Missouri-Columbia. \\
+
+When the location-aware device of a location-based service (LBS) user enters or exits a geo-fence, the device receives a generated notification. This notification might contain information about the location of the device. The geofence notice might be sent to a mobile telephone or an email account.\\
+
+With an increasing popularity of mobile advertising, geofencing has been employed to distribute location specific ads to customers on their mobile devices. This paper explains how we implemented the Google GeoFences API for locating a tourist and provide him/her automatic alerts of the near places that may be interesting to visit.
+
 
 
 \subsection{AR trends}
-Augmented Reality solutions on this
+There are many opportunities where Augmented Reality can be applied and achieve 
+interesting benefits. Talking about the Tourism sector, it has been generating a very
+lucrative approach for many corporations. For example, hotels are always looking for 
+improving the user experience, for that there are a solution for enabling virtual
+tours to hotel guests as an entertainment. \\
+
+Also, If we talk about education, there are some investigations in the museums and 
+ancient cities that are providing Augmented Reality for simulating un-existing scenarios
+or re-creating an specific environment as it was many years ago.\\
+
 
 \subsection{Related Projects}
-Talk about Prisma Prject
+Regarding projects that are allowing a better user experience with the use of Augmented Reality, there are many 
+approaches around the world. Some of them combine the Virtual and Augmented Reality in order to provide altered
+landscapes and in some case it's providing a new virtual environment that is based in the focused one but in its 
+recreated version of many years ago. \\
 
-gimbal
+The PRISMA[7] project is an example of this AR applications. 
+The main objective of PRISMA is the implementation of augmented binoculars, that combine the needs of tourists
+in real environments and Augmented Reality technologies. The use of these technologies will allow the users retrieving
+personalized and interactive multimodal information about monuments and historical buildings of a city. \\
 
+If we focus in technologies that are being used for Geofencing, the Gimbal[5] project  provides geofencing, secure 
+proximity beacons, location-based messaging, analytics and consumer privacy controls. 
 
 \subsubsection{Research}
-- tourism in Guadalajara
+First of all we wanted to focus on the best practices of Augmented Reality that is applied to Tourism[8]:
 
-- Tourism in Mexico Destinations
+\begin{enumerate}
+  \item An Enhanced Booking Experience
+  \item Museum Interactivity
+  \item AR Browsers in the Destination
+  \item Responsive Experience Through Gaming
+  \item Services in the Restaurant
+  \item Re-living Historic Life and Events
+  \item The Hotel Experience
+  \item Transportation
+  \item Accessibility and Translation
+  \item Participative Destination Management
+\end{enumerate}
 
-- Augmented Reality best practices
+The Travelex application has been designed to satisfy most of the best practices for AR applications in Tourism.
+It is improving the user experience at least in the last 3 points because it will provide assistence on finding 
+the best places to visit. \\
+
+According to the Secretary of Tourism in Mexico, in the last 5 years, there has been a considerable economic growth
+in tourism sector. Below the 2014 key results[6]:\\
+
+\begin{itemize}
+  \item Income of foreign exchange from international visitors: 12,037.9 millions of USD (+17.4\%)
+  \item Arrival of international visitors: 21,112.8 thousands of people (+18.2\%)
+  \item Medium spending per international tourist inside the country: 861.7 (+10.5\%)
+\end{itemize}
+
+The shown percentage is the comparison with the last year (2013). It means that there is a big opportunity to grow 
+in the Tourism sector with the enablement the Augmented Reality technologies in order to atract more tourist to
+visit mexican amazing destinations.
+
 
 \subsection{Hardware Requirements}
 Nowadays that smartphones are being used by a 63.5\% of  the 4.55 billion of mobile phone users[1], it's a great 
@@ -62,7 +113,18 @@ Below are the required development tools and frameworks:
 \end{itemize}
 
 \subsubsection{Justification}
+The above technologies where choosen because there is a vast amount of 
+documentation and there is a big community of developers that could help
+us in case of a show stopper may appear in the progress of the project.
 
+\subsubsection{Technologies Comparisons}
+When choosing the mobile Operative System for implementing the first release
+of Travelex, we choose Android becuase is the mobile OS that is being more 
+used and it is the one the has the more accesible prices for smartphones.
+Windows and iOS based phones would be the next target for a future release. \\
 
-\subsubsection{Comparison}
-- Comparison between Google Geofences/Gimbal
+Google Geofences vs Gimbal \\
+The Google Goefences provides more documentation and free access for starting
+developing a POC Android application. Gimbal seems to provide more features 
+that at this moment are not relevant to the project and it also cost more 
+money to implement.
