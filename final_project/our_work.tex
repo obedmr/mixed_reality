@@ -2,10 +2,56 @@
 
 
 \subsection{Identifying places of Interest}
-Based on top touristic places in Mexico
+Based on the top 10 touristic places in Mexico shown in the TripAdvisor website[3]: \\
+
+\begin{itemize}
+  \item Playa del Carmen
+  \item Puerto Vallarta
+  \item Mexico City
+  \item Cabo San Lucas
+  \item Zihuatanejo
+  \item Tulum
+  \item Oaxaca
+  \item San Miguel de Allende
+  \item Puerto Escondido
+  \item Acapulco
+\end{itemize}
+
+
+In order to provide the first proof of concept (POC), we started in our city; Guadalajara, which is also a 
+touristic city.
+
 
 \subsection{Google Geofences Implementation}
-Flow Diagram
+A geofence defines a region of interest. For example, this may be a polygon outside of which a particular set of entities is not expected to stray. Geofences apply to particular collections.\\
+
+Each geofence has a number of properties [4]:
+
+\begin{itemize}
+  \item ID: An opaque string used to refer to the geofence in calls to various methods. The ID for a geofence is assigned by the API at creation time. 
+
+  \item Name: A user-defined string describing the geofence.
+
+  \item Collection IDs: Zero or more IDs of collections to which the geofence applies. 
+
+  \item Polygon: A polygon specifying the geofence's region. Crumbs recorded for entities belonging to one of the geofence's collections that fall within this polygon make the geofence active. This is required. 
+\end{itemize}
+
+For the  Travelex first approach the work-flow consists in the following 4 steps:\\
+
+\begin{itemize}
+  \item The application opens the  SQLite database file where it obtains the pre-defined GeoFences
+  \item GeoFences information is sent to Google Geofencing API through a RESTFul API to be created and monitored
+  \item A BroadcastReceiver service is started to receive transactions from Google API when it identifies when
+        the users is near to a registered touristic place.
+  \item The BroadcastReceiver service is started every time the phone is booted in order to let the Google API the phone's
+        current location
+\end{itemize}
+
+IMAGE Flow Chart\\
+
+NOTE: In our first testing approach, geofences were predefined and loaded at installation time in the SQLite 
+database file.
 
 \subsection{Project Schedule}
 Gant Diagram
